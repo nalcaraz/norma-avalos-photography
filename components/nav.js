@@ -2,55 +2,49 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: '/about', label: 'about' },
-  { href: '/gallery', label: 'gallery' }
+  { href: '/about', label: 'Meet Norma' },
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/pricing', label: 'Pricing' },
+  { href: '/praises', label: 'Praises' },
+  { href: '/faq', label: 'FAQs' },
+  { href: '/clients', label: 'Clients' },
+  { href: '/contact', label: 'Contact' }
+
+
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
 })
 
 const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
-    </ul>
+  
+<ul className="nav justify-content-center">
+<li className="nav-item">
+    <Link href='/'>
+      <a className="nav-link">Home</a>
+    </Link>
+  </li>
+  {links.map(({ key, href, label }) => (
+    <li className="nav-item" key={key}>
+      <a className="nav-link" href={href}>{label}</a>
+    </li>
+  ))}<style jsx>{`
+ .nav-link {
+  font-family: 'Dawning of a New Day', cursive;
+  color: #8bc34a;
+  font-size: 1.75rem;
+ }.nav-link:hover {
 
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
+  font-weight: bold;
+ }
+ 
+`}</style>
+</ul>
+ 
+
+
+ 
+
 )
 
 export default Nav

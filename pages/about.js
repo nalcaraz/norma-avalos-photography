@@ -1,5 +1,8 @@
-function About(){
-    return <h1>About</h1>
+import React from 'react';
+import Layout from '../containers/layout';
+
+const About =()=>{
+return <Layout>About</Layout>
 }
 
 export default About;

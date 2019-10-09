@@ -1,69 +1,34 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import Layout from '../containers/layout'
 
 const Home = () => (
-  <div>
-    <Head>
-      <title>Norma Avalos Photography</title>
-      <link rel='icon' href='/favicon.ico' />
-    </Head>
-
-    <Nav />
-
-    <div className='hero'>
-      <h1 className='title'>Norma Avalos</h1>
-       
-       
+  
+   
+<Layout>
+<div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img className="d-block w-100" src="..." alt="First slide"/>
     </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
+    <div className="carousel-item">
+      <img className="d-block w-100" src="..." alt="Second slide"/>
+    </div>
+    <div className="carousel-item">
+      <img className="d-block w-100" src="..." alt="Third slide"/>
+    </div>
   </div>
+  <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
+  </a>
+  <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
+  </a>
+</div>
+</Layout>
 )
 
 export default Home
