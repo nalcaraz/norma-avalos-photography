@@ -1,8 +1,8 @@
-import React from 'react';
-import Layout from '../containers/layout';
+import React from 'react'
+import Layout from '../containers/layout'
 
-const Pricing =()=>{
-return <Layout>Pricing</Layout>
+const Pricing = () => {
+    return <Layout>Pricing</Layout>
 }
 
-export default Pricing;
+export default Pricing

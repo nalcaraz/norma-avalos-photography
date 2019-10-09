@@ -1,8 +1,8 @@
-import React from 'react';
-import Layout from '../containers/layout';
+import React from 'react'
+import Layout from '../containers/layout'
 
-const About =()=>{
-return <Layout>About</Layout>
+const About = () => {
+    return <Layout>About</Layout>
 }
 
-export default About;
+export default About

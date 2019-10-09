@@ -1,8 +1,8 @@
-import React from 'react';
-import Layout from '../containers/layout';
+import React from 'react'
+import Layout from '../containers/layout'
 
-const Gallery =()=>{
-return <Layout>Gallery</Layout>
+const Gallery = () => {
+    return <Layout>Gallery</Layout>
 }
 
-export default Gallery;
+export default Gallery
