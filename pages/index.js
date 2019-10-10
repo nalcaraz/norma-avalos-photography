@@ -2,61 +2,31 @@ import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
 import Layout from '../containers/layout'
+import CardNav from '../components/cardNav'
+import HomeCarousel from '../components/HomeCarousel'
 
+const navs = [
+    { path: '/gallery', label: 'Gallery', img: '/fatherson.jpg' },
+    {
+        path: '/about',
+        label: 'Meet Norma',
+        img: '/norma.jpg',
+    },
+    { path: '/clients', label: 'Clients', img: '/family.jpg' },
+]
 const Home = () => (
-    <Layout>
-        <div
-            id="carouselExampleControls"
-            className="carousel slide"
-            data-ride="carousel"
-        >
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img
-                        className="d-block w-100"
-                        src="..."
-                        alt="First slide"
-                    />
+    <Layout title="Norma Avalos Photography">
+       <HomeCarousel></HomeCarousel>
+        <div className="container d-flex flex-column flex-sm-row justify-content-between mt-5">
+            {navs.map(n => (
+                <div>                   
+                    <CardNav
+                        path={n.path}
+                        label={n.label}
+                        img={n.img}
+                    ></CardNav>
                 </div>
-                <div className="carousel-item">
-                    <img
-                        className="d-block w-100"
-                        src="..."
-                        alt="Second slide"
-                    />
-                </div>
-                <div className="carousel-item">
-                    <img
-                        className="d-block w-100"
-                        src="..."
-                        alt="Third slide"
-                    />
-                </div>
-            </div>
-            <a
-                className="carousel-control-prev"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
-            >
-                <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                ></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a
-                className="carousel-control-next"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
-            >
-                <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                ></span>
-                <span className="sr-only">Next</span>
-            </a>
+            ))}
         </div>
     </Layout>
 )
