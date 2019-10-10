@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 const CardNav = ({ path, label, img }) => {
     return (
-        <div className="card" style={{width: "18rem"}}>
+        <div className="card" >
             <img
-                className="card-img-top"
+                className="card-img-top img-fluid"
                 src={img}
                 alt="Card image cap"
             />

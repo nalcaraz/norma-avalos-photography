@@ -11,14 +11,14 @@ const HomeCarousel = ()=>{
         <div className="carousel-inner" style={{height: "400px"}}>
             <div className="carousel-item active">
                 <img
-                    className="d-block w-100 "
+                    className="d-block w-100 img-fluid"
                     src="/carousel/couple.jpg"
                     alt="First slide"
                 />
             </div>
             <div className="carousel-item">
                 <img
-                    className="d-block w-100"
+                    className="d-block w-100 img-fluid"
                     src="/carousel/child.jpg"
                   
                     alt="Second slide"
@@ -26,7 +26,7 @@ const HomeCarousel = ()=>{
             </div>
             <div className="carousel-item">
                 <img
-                    className="d-block w-100"
+                    className="d-block w-100 img-fluid"
                     src="/carousel/wedding.jpg"
                     alt="Third slide"
                 />

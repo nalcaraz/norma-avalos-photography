@@ -17,7 +17,7 @@ const links = [
 const Nav = () => (
     <Fragment>
         <div
-            className="position-fixed w-100 d-flex justify-content-between"
+            className="position-absolute w-100 d-flex justify-content-between"
             style={{ top: '-50px' }}
         >
             <img src="/watercolor_002.png" height="150px"></img>
