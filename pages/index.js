@@ -17,7 +17,7 @@ const navs = [
 const Home = () => (
     <Layout title="Norma Avalos Photography">
        <HomeCarousel></HomeCarousel>
-        <div className="container d-flex flex-column flex-sm-row justify-content-between mt-5">
+        <div className="container d-flex flex-column flex-md-row  justify-content-between mt-5">
             {navs.map(n => (
                 <div className="w-100 p-1">                   
                     <CardNav
