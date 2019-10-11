@@ -5,7 +5,7 @@ const About = () => {
     return (
         <Layout>
             <div className="d-flex justify-content-center">
-                <h1 className="mt-2 display-4 meet-title">
+                <h1 className="mt-2 display-4 meet-title text-center">
                     Hello! I'm Norma
                 </h1>
             </div>
@@ -20,8 +20,8 @@ const About = () => {
                     <img src="/norma_004.jpg" className="img-fluid"></img>
                 </div>
             </div>
-            <div className="d-flex justify-content-center">
-                <h2 className="text-uppercase mt-2 meet-description">
+            <div className="d-flex justify-content-center ">
+                <h2 className="text-uppercase mt-2 meet-description text-center">
                     Hello! I'm Norma. The person behind the camera.
                 </h2>
             </div>
