@@ -30,8 +30,6 @@ const Header = ({ title }) => {
                 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous"
             ></script>
-            <script src="https://kit.fontawesome.com/6d267e1b89.js" crossorigin="anonymous"></script>
-
         </Head>
         
     )
