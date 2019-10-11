@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../containers/layout'
-import CardNav from '../components/CardNav'
+import CardNav from '../components/cardNav'
 import HomeCarousel from '../components/HomeCarousel'
 
 
