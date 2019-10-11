@@ -4,7 +4,12 @@ import Layout from '../containers/layout'
 const About = () => {
     return (
         <Layout>
-            <div className="d-flex flex-column flex-md-row justify-content-between mt-5 justify-content-center">
+            <div className="d-flex justify-content-center">
+                <h1 className="mt-2 display-4 meet-title">
+                    Hello! I'm Norma
+                </h1>
+            </div>
+            <div className="d-flex flex-column flex-md-row justify-content-between mt-3 justify-content-center">
                 <div className="card w-100">
                     <img src="/norma_002.jpg" className="img-fluid"></img>
                 </div>
@@ -16,12 +21,15 @@ const About = () => {
                 </div>
             </div>
             <div className="d-flex justify-content-center">
-                <h2 className="text-uppercase mt-2">
+                <h2 className="text-uppercase mt-2 meet-description">
                     Hello! I'm Norma. The person behind the camera.
                 </h2>
             </div>
             <style jsx>{`
-                h2 {
+                .meet-title {
+                    font-family: 'Dawning of a New Day', cursive;
+                }
+                .meet-description {
                     font-family: 'Cinzel', serif;
                 }
             `}</style>
