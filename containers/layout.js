@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-import Head from '../components/Head'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Head from '../components/head'
+import Nav from '../components/nav'
+import Footer from '../components/footer'
 const Layout = ({ children, title }) => {
     return (
         <Fragment>
