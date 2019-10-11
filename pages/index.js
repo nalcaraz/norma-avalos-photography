@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from '../components/Nav'
+import Nav from '../components/nav'
 import Layout from '../containers/Layout'
 import CardNav from '../components/CardNav'
 import HomeCarousel from '../components/HomeCarousel'
