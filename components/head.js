@@ -12,7 +12,7 @@ const Header = ({ title }) => {
                 crossorigin="anonymous"
             ></link>
             <link
-                href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day&display=swap"
+                href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Cinzel&display=swap"
                 rel="stylesheet"
             ></link>
             <script

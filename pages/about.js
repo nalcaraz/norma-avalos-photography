@@ -2,7 +2,31 @@ import React from 'react'
 import Layout from '../containers/layout'
 
 const About = () => {
-    return <Layout>About</Layout>
+    return (
+        <Layout>
+            <div className="d-flex flex-column flex-md-row justify-content-between mt-5 justify-content-center">
+                <div className="card w-100">
+                    <img src="/norma_002.jpg" className="img-fluid"></img>
+                </div>
+                <div className="card w-100 ">
+                    <img src="/norma.jpg" className="img-fluid"></img>
+                </div>
+                <div className="card w-100 ">
+                    <img src="/norma_004.jpg" className="img-fluid"></img>
+                </div>
+            </div>
+            <div className="d-flex justify-content-center">
+                <h2 className="text-uppercase mt-2">
+                    Hello! I'm Norma. The person behind the camera.
+                </h2>
+            </div>
+            <style jsx>{`
+                h2 {
+                    font-family: 'Cinzel', serif;
+                }
+            `}</style>
+        </Layout>
+    )
 }
 
 export default About
