@@ -19,11 +19,7 @@ const GalleryNav = ({ label, path, img }) => {
                     height: 20rem;
                     object-fit:cover;
                 }
-                .link{
-                    font-family: 'Dawning of a New Day', cursive;
-                    color: #8bc34a;
-                    font-size: 1.75rem;
-                }
+                
             `}</style>
         </div>
     )

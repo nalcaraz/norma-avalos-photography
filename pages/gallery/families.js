@@ -3,6 +3,7 @@ import Layout from '../../containers/layout'
 import Link from 'next/link'
 import BackToGallery from '../../components/backToGallery'
 import GalleryCarousel from '../../components/galleryCarousel'
+import GalleryContent from '../../components/galleryContent'
 const images = [
     {
         src: '/family.jpg',
@@ -23,12 +24,10 @@ const images = [
 ]
 const FamiliesGallery = () => {
     return (
-        
-        <Layout title="Families Gallery">
-            <BackToGallery></BackToGallery>
-            <h1 class="dawn-new-day text-center"> Families Gallery</h1>
-            <GalleryCarousel images={images}></GalleryCarousel>
-        </Layout>
+        <GalleryContent
+            title="Families Gallery"
+            images={images}
+        ></GalleryContent>
     )
 }
 

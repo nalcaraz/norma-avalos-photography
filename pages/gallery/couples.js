@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../containers/layout'
 import BackToGallery from '../../components/backToGallery'
 import GalleryCarousel from '../../components/galleryCarousel'
+import GalleryContent from '../../components/galleryContent'
 const images = [
     {
         src: '/couple.jpg',
@@ -22,11 +23,7 @@ const images = [
 ]
 const CouplesGallery = () => {
     return (
-        <Layout title="Couples Gallery">
-          <BackToGallery></BackToGallery>
-            <h1 class="dawn-new-day text-center">Couples Gallery</h1>
-            <GalleryCarousel images={images}></GalleryCarousel>
-        </Layout>
+        <GalleryContent title="Couples Gallery" images={images}></GalleryContent>
     )
 }
 

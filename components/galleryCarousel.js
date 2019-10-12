@@ -2,7 +2,7 @@ import React from 'react'
 
 const GalleryCarousel = ({ images }) => {
     return (
-        <div className="container">
+        <div className="container d-flex justify-content-center">
             <div
                 id="galleryImages"
                 className="carousel slide"

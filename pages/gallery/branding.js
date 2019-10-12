@@ -3,6 +3,7 @@ import Layout from '../../containers/layout'
 import Link from 'next/link'
 import GalleryCarousel from '../../components/galleryCarousel'
 import BackToGallery from '../../components/backToGallery'
+import GalleryContent from '../../components/galleryContent'
 const images = [
     {
         src: '/logo.png',
@@ -24,12 +25,10 @@ const images = [
 
 const BrandingGallery = () => {
     return (
-        /*this should be it's own component*/
-        <Layout title="Branding Gallery">
-            <BackToGallery></BackToGallery>
-            <h1 class="text-center dawn-new-day">Branding Gallery</h1>
-            <GalleryCarousel images={images}></GalleryCarousel>
-        </Layout>
+        <GalleryContent
+            title="Branding Gallery"
+            images={images}
+        ></GalleryContent>
     )
 }
 
