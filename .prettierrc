@@ -3,5 +3,8 @@
     "tabWidth": 4,
     "semi": false,
     "singleQuote": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": true
+    }
   }
