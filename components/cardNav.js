@@ -9,17 +9,12 @@ const CardNav = ({ path, label, img }) => {
                 src={img}
                 alt="Card image cap"
             />
-            <div className="card-body">
+            <div className="card-body text-center">
                 <Link href={path}>
-                    <a className="stretched-link">{label}</a>
+                    <a className="link  stretched-link">{label}</a>
                 </Link>
             </div>
-            <style jsx>{`
-            .stretched-link{
-                font-family: 'Dawning of a New Day', cursive;
-                color: #8bc34a;
-                font-size: 1.75rem;
-            }`}</style>
+          
         </div>
 
     )

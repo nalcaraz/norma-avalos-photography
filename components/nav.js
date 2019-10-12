@@ -8,7 +8,7 @@ const links = [
     { href: '/pricing', label: 'Pricing' },
     { href: '/praises', label: 'Praises' },
     { href: '/faq', label: 'FAQs' },
-    { href: '/clients', label: 'Clients' },
+    { href: 'https://normaavalosphotography.client-gallery.com', label: 'Clients' },
     { href: '/contact', label: 'Contact' },
 ].map(link => {
     link.key = `nav-link-${link.href}-${link.label}`

@@ -5,7 +5,7 @@ import GalleryNav from '../components/galleryNav'
 const Gallery = () => {
     return (
         <Layout title="Gallery">
-          
+          <h1 className="dawn-new-day text-center">Gallery</h1>
             <div className="d-flex flex-column flex-md-row justify-content-center justify-content-around">
                 <GalleryNav
                     label="Couples"

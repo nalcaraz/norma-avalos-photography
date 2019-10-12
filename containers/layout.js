@@ -28,6 +28,9 @@ const Layout = ({ children, title }) => {
                 .dawn-new-day {
                     font-family: 'Dawning of a New Day', cursive;
                 }
+                .font-cinzel {
+                    font-family: 'Cinzel', serif;
+                }
             `}</style>
         </Fragment>
     )
