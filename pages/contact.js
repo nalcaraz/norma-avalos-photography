@@ -43,8 +43,10 @@ const Contact = () => {
     }, [email, message])
     return (
         <Layout>
-            <form netlify data-netlify="true" method="POST" name="contact-norma-avalos-photography">
-                <div className="form-group" noValidate>
+            <form name="contact-norma-avalos-photography" method="POST" data-netlify="true"  data-netlify-honeypot="bot-field" >
+            <input type="hidden" name="form-name" value="contact-norma-avalos-photography" />
+
+                <div className="for" noValidate>
                     <label htmlFor="email" className="font-cinzel">
                         Email address
                     </label>
