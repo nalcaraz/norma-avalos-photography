@@ -43,14 +43,24 @@ const Contact = () => {
     }, [email, message])
     return (
         <Layout>
-            <form name="contact-norma-avalos-photography" method="POST" data-netlify="true"  data-netlify-honeypot="bot-field" >
-            <input type="hidden" name="form-name" value="contact-norma-avalos-photography" />
+            <form
+                name="contact-norma-avalos-photography"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+            >
+                <input
+                    type="hidden"
+                    name="form-name"
+                    value="contact-norma-avalos-photography"
+                />
 
                 <div className="for" noValidate>
                     <label htmlFor="email" className="font-cinzel">
                         Email address
                     </label>
                     <input
+                        name="email"
                         onChange={e => handleEmailChange(e)}
                         type="email"
                         className="form-control"
@@ -63,6 +73,7 @@ const Contact = () => {
                         Message
                     </label>
                     <textarea
+                        name="message"
                         onChange={e => handleMessageChange(e)}
                         className="form-control"
                         id="message"
