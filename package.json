@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "export": "next build && next export",
+        "export": "npm run build && next export",
         "start": "cross-env NODE_ENV=dev npm-run-all --parallel start:app start:server",
         "start:app": "node server.js",
         "start:server": "netlify-lambda serve .netlify/functions",
