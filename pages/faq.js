@@ -2,36 +2,32 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../containers/layout';
 const fetch = require('node-fetch').default;
 
-const Faq = ({records}) => {
-const {records: faqs} = records;
-    
+const Faq = ({ records }) => {
+    const { records: faqs } = records;
 
     return (
         <Layout title="FAQS">
             <h1 className="dawn-new-day text-center">FAQs</h1>
-            <div id="faqs">
-                {
-                    faqs &&
-                    faqs.length > 0 &&
-                    faqs.map(q => {
-                        return (
-                            <div className="card" key={q.fields.QuestionNumber}>
-                                <div className="card-header">
-                                    {q.fields.Question}
-                                </div>
-                                <div className="card-body">
-                                    <p className="card-text">
-                                        {q.fields.Answer}
-                                    </p>
-                                </div>
+
+            {faqs &&
+                faqs.length > 0 &&
+                faqs.map(q => {
+                    return (
+                        <div className="card m-2" key={q.fields.QuestionNumber}>
+                            <div className="card-header font-cinzel">
+                                {q.fields.Question}
                             </div>
-                        );
-                    })}
-                { (!faqs || faqs.length == 0) && (
-                    <p>Please contact me if you have questions</p>
-                )}
-                
-            </div>
+                            <div className="card-body">
+                                <p className="card-text font-cinzel">
+                                    {q.fields.Answer}
+                                </p>
+                            </div>
+                        </div>
+                    );
+                })}
+            {(!faqs || faqs.length == 0) && (
+                <p className="font-cinzel text-center">Please contact me if you have questions</p>
+            )}
         </Layout>
     );
 };
