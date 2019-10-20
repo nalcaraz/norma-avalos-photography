@@ -43,6 +43,7 @@ const Contact = () => {
     }, [email, message])
     return (
         <Layout>
+              <h1 className="dawn-new-day text-center">Contact</h1>
             <form
                 name="contact-norma-avalos-photography"
                 method="POST"

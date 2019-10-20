@@ -4,12 +4,25 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "export": "next build && next export"
+        "export": "next build && next export",
+        "start": "cross-env NODE_ENV=dev npm-run-all --parallel start:app start:server",
+        "start:app": "node server.js",
+        "start:server": "netlify-lambda serve .netlify/functions",
+        "build": "cross-env NODE_ENV=production run-p build:**",
+        "build:app": "next build",
+        "build:lambda": "netlify-lambda build .netlify/functions"
     },
     "dependencies": {
+        "cross-env": "^6.0.3",
+        "dotenv": "^8.2.0",
+        "encoding": "^0.1.12",
+        "express": "^4.17.1",
+        "http-proxy-middleware": "^0.20.0",
+        "isomorphic-unfetch": "^3.0.0",
+        "netlify-lambda": "^1.6.3",
         "next": "9.1.1",
+        "node-fetch": "^2.6.0",
+        "npm-run-all": "^4.1.5",
         "prettier": "^1.18.2",
         "react": "16.10.2",
         "react-dom": "16.10.2",

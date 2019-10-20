@@ -11,7 +11,7 @@ const navs = [
         label: 'Meet Norma',
         img: '/norma.jpg',
     },
-    { path: '/clients', label: 'Clients', img: '/family.jpg' },
+    { path: 'https://normaavalosphotography.client-gallery.com', label: 'Clients', img: '/family.jpg' },
 ]
 const Home = () => (
     <Layout title="Norma Avalos Photography">
