@@ -5,7 +5,7 @@ import fetch from 'isomorphic-unfetch'
 
 
 
-const Gallery = ({stuff}) => {
+const Gallery = ({records}) => {
 
     return (
         <Layout title="Gallery">
@@ -30,5 +30,15 @@ const Gallery = ({stuff}) => {
         </Layout>
     )
 }
+// Gallery.getInitialProps = async ({ req }) => {
+//     const baseUrl =
+//         process.env.NODE_ENV === 'development'
+//             ? 'http://localhost:3000'
+//             : 'https://normaavalosphotography.netlify.com';
 
+//     const res = await fetch(baseUrl + '/.netlify/functions/galleryType');
+//     const json = await res.json();
+
+//     return { records: json };
+// };
 export default Gallery
