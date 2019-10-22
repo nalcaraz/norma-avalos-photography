@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../containers/layout';
+import { server } from '../config';
 const fetch = require('node-fetch').default;
 
 const Praises = ({ records }) => {
@@ -31,12 +32,8 @@ const Praises = ({ records }) => {
 };
 
 Praises.getInitialProps = async ({ req }) => {
-    const baseUrl =
-        process.env.NODE_ENV === 'development'
-            ? 'http://localhost:3000'
-            : 'https://normaavalosphotography.netlify.com';
-
-    const res = await fetch(baseUrl + '/.netlify/functions/praises');
+  
+    const res = await fetch(server + '/.netlify/functions/praises');
     const json = await res.json();
 
     return { records: json };

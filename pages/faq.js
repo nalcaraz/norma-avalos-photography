@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../containers/layout';
-const fetch = require('node-fetch').default;
+import {server} from "../config"
 
+const fetch = require('node-fetch').default;
 const Faq = ({ records }) => {
     const { records: faqs } = records;
 
@@ -33,12 +34,8 @@ const Faq = ({ records }) => {
 };
 
 Faq.getInitialProps = async ({ req }) => {
-    const baseUrl =
-        process.env.NODE_ENV === 'development'
-            ? 'http://localhost:3000'
-            : 'https://normaavalosphotography.netlify.com';
-
-    const res = await fetch(baseUrl + '/.netlify/functions/faq');
+   
+    const res = await fetch(server + '/.netlify/functions/faq');
     const json = await res.json();
 
     return { records: json };
