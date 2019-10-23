@@ -4,7 +4,7 @@ dotenv.config()
 
 exports.handler = function(event, context, callback) {
     return fetch(
-        'https://api.airtable.com/v0/appxq7iTOEHVbUIdg/Gallery?maxRecords=3&view=Grid%20view',
+        `https://api.airtable.com/v0/appxq7iTOEHVbUIdg/Gallery?maxRecords=3&view=Grid%20view&filterByFormula=IsPublished%3D1`,
         {
             method: 'GET',
             headers: {
