@@ -8,7 +8,7 @@ const Footer = () => {
                 className="w-100 mt-5 d-flex justify-content-between"
                 style={{ bottom: '-100px' }}
             >
-                <img src="/leaf.png" height="150px"></img>
+                <img src="/leaf_xs.png" height="150px"></img>
                 <div className="d-flex flex-column justify-content-center">
                     <Link href="/">
                         <a className="link dawn-new-day">Praise</a>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
 
                 <img
-                    src="/leaf.png"
+                    src="/leaf_xs.png"
                     height="150px"
                     style={{ transform: 'scaleX(-1)' }}
                 ></img>
