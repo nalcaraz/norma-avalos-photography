@@ -12,7 +12,7 @@ const Layout = ({ children, title }) => {
                 }
             ></Head>
             <Nav></Nav>
-            <main className="container pt-3"> {children}</main>
+            <main className="container pt-3 pb-5"> {children}</main>
             <Footer></Footer>
             <style jsx global>{`
                 a.link {
