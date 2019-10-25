@@ -11,13 +11,13 @@ const About = () => {
             </div>
             <div className="d-flex flex-column flex-md-row justify-content-between mt-3 justify-content-center">
                 <div className="card w-100 m-md-4">
-                    <img src="/norma_002.jpg" className="img-fluid"></img>
+                    <img src="/norma_002_md.jpg" className="img-fluid"></img>
                 </div>
                 <div className="card w-100  m-md-4">
-                    <img src="/norma.jpg" className="img-fluid"></img>
+                    <img src="/norma_md.jpg" className="img-fluid"></img>
                 </div>
                 <div className="card w-100 m-md-4">
-                    <img src="/norma_004.jpg" className="img-fluid"></img>
+                    <img src="/norma_004_md.jpg" className="img-fluid"></img>
                 </div>
             </div>
             <div className="d-flex justify-content-center ">

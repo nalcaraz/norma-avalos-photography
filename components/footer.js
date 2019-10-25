@@ -8,7 +8,7 @@ const Footer = () => {
                 className="w-100 mt-5 d-flex justify-content-between"
                 style={{ bottom: '-100px' }}
             >
-                <img src="/leaf_xs.png" height="150px"></img>
+                <img alt="leaf" src="/leaf_xs.png" height="150px"></img>
                 <div className="d-flex flex-column justify-content-center">
                     <Link href="/">
                         <a className="link dawn-new-day">Praise</a>
@@ -20,6 +20,7 @@ const Footer = () => {
                 <div className="d-flex justify-content-center align-items-center">
                     <a
                         title="Follow me on Instagram"
+                        rel="noreferrer"
                         href="https://instagram.com/normaavalos_photography"
                         target="_blank"
                     >
@@ -34,6 +35,7 @@ const Footer = () => {
                     </a>
                     <a
                         title="Check out my YouTube Channel"
+                        rel="noreferrer"
                         href="https://www.youtube.com/channel/UCu4bpAfpphOGq8XIXTRQSaA"
                         targer="_blank"
                     >
@@ -54,6 +56,7 @@ const Footer = () => {
                 </div>
 
                 <img
+                    alt="leaf"
                     src="/leaf_xs.png"
                     height="150px"
                     style={{ transform: 'scaleX(-1)' }}

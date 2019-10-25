@@ -5,13 +5,13 @@ import HomeCarousel from '../components/HomeCarousel'
 
 
 const navs = [
-    { path: '/gallery', label: 'Gallery', img: '/fatherson.jpg' },
+    { path: '/gallery', label: 'Gallery', img: '/fatherson_md.jpg' },
     {
         path: '/about',
         label: 'Meet Norma',
-        img: '/norma.jpg',
+        img: '/norma_md.jpg',
     },
-    { path: 'https://normaavalosphotography.client-gallery.com', label: 'Clients', img: '/family.jpg' },
+    { path: 'https://normaavalosphotography.client-gallery.com', label: 'Clients', img: '/family_md.jpg' },
 ]
 const Home = () => (
     <Layout title="Norma Avalos Photography">

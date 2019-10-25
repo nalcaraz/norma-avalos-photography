@@ -7,7 +7,7 @@ const CardNav = ({ path, label, img }) => {
             <img
                 className="card-img-top img-fluid"
                 src={img}
-                alt="Card image cap"
+                alt={img}
             />
             <div className="card-body text-center">
                 <Link href={path}>

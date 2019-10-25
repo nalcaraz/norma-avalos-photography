@@ -21,15 +21,15 @@ const Nav = () => (
             className="position-absolute w-100 d-flex justify-content-between"
             style={{ top: '-50px' }}
         >
-            <img src="/watercolor_002_xs.png" height="150px"></img>
-            <img
+            <img alt="watercolor" src="/watercolor_002_xs.png" height="150px"></img>
+            <img  alt="watercolor" 
                 src="/watercolor_002_xs.png"
                 height="150px"
                 style={{ transform: 'scaleX(-1)' }}
             ></img>
         </div>
         <div className="d-flex justify-content-center">
-            <img src="/logo_xs.png" height="225px"></img>
+            <img alt="logo" src="/logo_xs.png" height="225px"></img>
         </div>
         <nav className="navbar navbar-expand-sm justify-content-between navbar-light bg-light  sticky-top">
           
