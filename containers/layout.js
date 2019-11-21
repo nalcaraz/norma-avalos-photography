@@ -16,8 +16,8 @@ const Layout = ({ children, title }) => {
             <Footer></Footer>
             <style jsx global>{`
                 a.link {
-                    font-family: 'Dawning of a New Day', cursive;
-                    color: #8bc34a;
+                    font-family:'Cormorant Infant', serif;
+                    color:#bf9000;
                     font-size: 1.75rem;
                 }
                 a.link:hover {
@@ -25,10 +25,10 @@ const Layout = ({ children, title }) => {
                     text-decoration: none;
                     text-decoration-line: none;
                 }
-                .dawn-new-day {
-                    font-family: 'Dawning of a New Day', cursive;
+                .primary-font {
+                    font-family: 'Cormorant Infant', serif;
                 }
-                .font-cinzel {
+                .secondary-font {
                     font-family: 'Cinzel', serif;
                 }
             `}</style>

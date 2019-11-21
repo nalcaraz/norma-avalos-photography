@@ -8,6 +8,7 @@ const Header = ({ title }) => {
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1"
+                description="Norma Avalos Photography. Local photographer in the Inland Empire."
             ></meta>
             <link
                 rel="stylesheet"
@@ -16,7 +17,7 @@ const Header = ({ title }) => {
                 crossorigin="anonymous"
             />
             <link
-                href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Cinzel&display=swap"
+                href="https://fonts.googleapis.com/css?family=Cormorant+Infant:300,400&display=swap"
                 rel="stylesheet"
             ></link>
             <script

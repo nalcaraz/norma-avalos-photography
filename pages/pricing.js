@@ -61,23 +61,23 @@ const Pricing = () => {
     console.log('packages', packages)
     return (
         <Layout>
-            <h1 className="dawn-new-day text-center">Pricing</h1>
+            <h1 className="primary-font text-center">Pricing</h1>
             {packages &&
                 packages.length > 0 &&
                 packages.map(p => {
                     return (
                         <div key={p.name} className="package-wrapper">
                             <hr></hr>
-                            <h2 className="dawn-new-day text-center">
+                            <h2 className="primary-font text-center">
                                 {p.name}
                             </h2>
-                            <p  className="lead font-cinzel text-uppercase">{p.description}</p>
+                            <p  className="lead primary-font text-uppercase">{p.description}</p>
                             <ul className="package">
                                 {p.includes &&
                                     p.includes.length > 0 &&
                                     p.includes.map((o, i) => (
                                         <li
-                                            className="font-cinzel text-uppercase"
+                                            className="primary-font text-uppercase"
                                             key={i}
                                         >
                                             <p className="lead">{o}</p>

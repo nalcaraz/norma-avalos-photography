@@ -5,7 +5,7 @@ const About = () => {
     return (
         <Layout title="Meet Norma">
             <div className="d-flex justify-content-center">
-                <h1 className="mt-2 display-4 meet-title text-center">
+                <h1 className="mt-2 display-4 meet-title primary-font text-center">
                     Hello! I'm Norma
                 </h1>
             </div>
@@ -21,18 +21,11 @@ const About = () => {
                 </div>
             </div>
             <div className="d-flex justify-content-center ">
-                <h2 className="text-uppercase mt-2 meet-description text-center">
+                <h2 className="text-uppercase mt-2 primary-font text-center">
                     Hello! I'm Norma. The person behind the camera.
                 </h2>
             </div>
-            <style jsx>{`
-                .meet-title {
-                    font-family: 'Dawning of a New Day', cursive;
-                }
-                .meet-description {
-                    font-family: 'Cinzel', serif;
-                }
-            `}</style>
+          
         </Layout>
     )
 }

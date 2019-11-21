@@ -7,7 +7,7 @@ const GalleryContent = ({ title, images }) => {
     return (
         <Layout title={title}>
             <BackToGallery></BackToGallery>
-            <h1 className="text-center dawn-new-day">{title}</h1>
+            <h1 className="text-center primary-font">{title}</h1>
             <GalleryCarousel images={images}></GalleryCarousel>
         </Layout>
     )
