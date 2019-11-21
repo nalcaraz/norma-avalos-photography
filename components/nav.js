@@ -48,20 +48,20 @@ const Nav = () => (
                 <ul className="navbar-nav justify-content-center w-100  sticky-top">
                     <li className="nav-item">
                         <Link href="/">
-                            <a className="nav-link">Home</a>
+                            <a className="nav-link primary-font">Home</a>
                         </Link>
                     </li>
                     {links.map(({ key, href, label }) => (
                         <li className="nav-item" key={key}>
-                            <a className="nav-link" href={href}>
+                            <a className="nav-link primary-font" href={href}>
                                 {label}
                             </a>
                         </li>
                     ))}
                     <style jsx>{`
                         .nav-link {
-                            font-family: 'Dawning of a New Day', cursive;
-                            color: #8bc34a !important;
+                           
+                            color: #bf9000 !important;
                             font-size: 1.75rem;
                         }
                         .nav-link:hover {

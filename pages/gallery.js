@@ -8,7 +8,7 @@ const Gallery = ({ records }) => {
     const { records: galleries } = records;
     return (
         <Layout title="Gallery">
-            <h1 className="dawn-new-day text-center">Gallery</h1>
+            <h1 className="primary-font text-center">Gallery</h1>
             <div className="d-flex flex-column flex-md-row justify-content-center justify-content-around">
                 {galleries &&
                     galleries.length > 0 &&

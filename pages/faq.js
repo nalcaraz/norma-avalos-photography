@@ -8,18 +8,18 @@ const Faq = ({ records }) => {
 
     return (
         <Layout title="FAQS">
-            <h1 className="dawn-new-day text-center">FAQs</h1>
+            <h1 className="primary-font text-center">FAQs</h1>
 
             {faqs &&
                 faqs.length > 0 &&
                 faqs.map(q => {
                     return (
                         <div className="card m-2" key={q.fields.QuestionNumber}>
-                            <div className="card-header font-cinzel">
+                            <div className="card-header primary-font">
                                 {q.fields.Question}
                             </div>
                             <div className="card-body">
-                                <p className="card-text font-cinzel">
+                                <p className="card-text primary-font">
                                     {q.fields.Answer}
                                 </p>
                             </div>
@@ -27,7 +27,7 @@ const Faq = ({ records }) => {
                     );
                 })}
             {(!faqs || faqs.length == 0) && (
-                <p className="font-cinzel text-center">Please contact me if you have questions</p>
+                <p className="primary-font text-center">Please contact me if you have questions</p>
             )}
         </Layout>
     );

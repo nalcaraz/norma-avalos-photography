@@ -43,7 +43,7 @@ const Contact = () => {
     }, [email, message])
     return (
         <Layout>
-              <h1 className="dawn-new-day text-center">Contact</h1>
+              <h1 className="primary-font text-center">Contact</h1>
             <form
                 name="contact-norma-avalos-photography"
                 method="POST"
@@ -57,7 +57,7 @@ const Contact = () => {
                 />
 
                 <div className="for" noValidate>
-                    <label htmlFor="email" className="font-cinzel">
+                    <label htmlFor="email" className="primary-font">
                         Email address
                     </label>
                     <input
@@ -70,7 +70,7 @@ const Contact = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="message" className="font-cinzel">
+                    <label htmlFor="message" className="primary-font">
                         Message
                     </label>
                     <textarea
@@ -88,7 +88,7 @@ const Contact = () => {
                     <button
                         disabled={!formValid}
                         type="submit"
-                        className="btn btn-secondary font-cinzel align-self-center"
+                        className="btn btn-secondary primary-font align-self-center"
                     >
                         Submit
                     </button>
