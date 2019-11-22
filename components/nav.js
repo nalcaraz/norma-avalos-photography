@@ -31,7 +31,7 @@ const Nav = () => (
         <div className="d-flex justify-content-center">
             <img alt="logo" src="/logo_xs.png" height="225px"></img>
         </div>
-        <nav className="navbar navbar-expand-sm justify-content-between navbar-light bg-light  sticky-top">
+        <nav className="navbar navbar-expand-md justify-content-between navbar-light bg-light  sticky-top">
           
             <button
                 className="navbar-toggler "
