@@ -31,6 +31,9 @@ const Layout = ({ children, title }) => {
                 .secondary-font {
                     font-family: 'Cinzel', serif;
                 }
+                .small{
+                    font-size: 1.25rem !important;
+                }
             `}</style>
         </Fragment>
     )

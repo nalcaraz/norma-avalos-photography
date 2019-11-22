@@ -71,13 +71,13 @@ const Pricing = () => {
                             <h2 className="primary-font text-center">
                                 {p.name}
                             </h2>
-                            <p  className="lead primary-font text-uppercase">{p.description}</p>
+                            <p  className="lead primary-font">{p.description}</p>
                             <ul className="package">
                                 {p.includes &&
                                     p.includes.length > 0 &&
                                     p.includes.map((o, i) => (
                                         <li
-                                            className="primary-font text-uppercase"
+                                            className="primary-font"
                                             key={i}
                                         >
                                             <p className="lead">{o}</p>
