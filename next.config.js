@@ -18,6 +18,7 @@ module.exports = {
         }),
       {}
     )
+    console.log("pages", pages)
 
     // combine the map of post pages with the home
     return Object.assign({}, pages, {
