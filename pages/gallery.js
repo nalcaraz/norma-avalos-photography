@@ -11,7 +11,7 @@ const Gallery = ({ records }) => {
         <Layout title="Gallery">
             <h1 className="primary-font text-center">Gallery</h1>
             <div className="d-flex flex-column flex-md-row justify-content-center justify-content-around">
-                {galleries &&
+                {/* {galleries &&
                     galleries.length > 0 &&
                     galleries.map(g => {
                         return (
@@ -26,7 +26,7 @@ const Gallery = ({ records }) => {
                                path={`/galleries/${g.fields.Gallery}`}
                             ></GalleryNav>
                         );
-                    })}
+                    })} */}
             </div>
         </Layout>
     );
