@@ -6,7 +6,7 @@ const GalleryNav = ({ label, path, img }) => {
         <div className="card gallery-nav w-100 m-md-4">
             <img className="card-img-top gallery-nav-img" src={img} alt="Card image cap"></img>
             <div className="card-body text-center">
-                <Link href={path}>
+                <Link href={path} >
                     <a className="link stretched-link">{label}</a>
                 </Link>
             </div>

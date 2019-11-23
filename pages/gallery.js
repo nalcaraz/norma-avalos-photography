@@ -6,6 +6,7 @@ import {server} from '../config'
 
 const Gallery = ({ records }) => {
     const { records: galleries } = records;
+   //console.log(galleries)
     return (
         <Layout title="Gallery">
             <h1 className="primary-font text-center">Gallery</h1>
@@ -21,7 +22,8 @@ const Gallery = ({ records }) => {
                                     g.fields.CoverImage &&
                                     g.fields.CoverImage[0].thumbnails.large.url
                                 }
-                                path={g.fields.Path}
+                                //path={`${g.fields.Path}/$`}
+                               path={`/galleries/${g.fields.Gallery}`}
                             ></GalleryNav>
                         );
                     })}
