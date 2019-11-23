@@ -17,6 +17,7 @@ exports.handler = function(event, context, callback) {
         .then(res => {
             return res.json()
         })
+        //.then(data=>data.fields.IsPublished)
         .then(data => ({
             statusCode: 200,
             body: JSON.stringify(data),
