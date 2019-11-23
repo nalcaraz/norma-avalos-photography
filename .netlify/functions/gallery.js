@@ -3,8 +3,9 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 exports.handler = function(event, context, callback) {
+   console.log("gallery event", event)
     return fetch(
-        `https://api.airtable.com/v0/appxq7iTOEHVbUIdg/Gallery?maxRecords=3&view=Grid%20view&filterByFormula=IsPublished%3D1`,
+        `https://api.airtable.com/v0/appxq7iTOEHVbUIdg/Gallery/${event.queryStringParameters.id}`,
         {
             method: 'GET',
             headers: {

@@ -2,7 +2,7 @@ import React from 'react'
 
 const GalleryCarousel = ({ images }) => {
     return (
-        <div className="container d-flex justify-content-center">
+        // <div className="container d-flex justify-content-center">
             <div
                 id="galleryImages"
                 className="carousel slide"
@@ -18,19 +18,19 @@ const GalleryCarousel = ({ images }) => {
                     <li data-target="#galleryImages" data-slide-to="1"></li>
                     <li data-target="#galleryImages" data-slide-to="2"></li>
                 </ol>
-                <div className="carousel-inner h-100">
+                <div className="carousel-inner text-center h-100">
                     {images.map((image, i) => {
                         return (
                             <div
                                 className={`carousel-item h-100 ${
                                     i === 0 ? 'active' : ''
                                 }`}
-                                key={image.alt}
+                                key={image.filename}
                             >
                                 <img
-                                    className="d-block h-100"
-                                    src={image.src}
-                                    alt={image.alt}
+                                    className=" h-100"
+                                    src={image.thumbnails.large.url}
+                                    alt={image.filename}
                                 />
                             </div>
                         )
@@ -55,7 +55,8 @@ const GalleryCarousel = ({ images }) => {
                     </a>
                 </div>
             </div>
-        </div>
+       
+        // </div>
     )
 }
 
