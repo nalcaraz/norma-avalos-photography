@@ -22,8 +22,7 @@ const Gallery = ({ records }) => {
                                     g.fields.CoverImage &&
                                     g.fields.CoverImage[0].thumbnails.large.url
                                 }
-                                //path={`${g.fields.Path}/$`}
-                               path={`/galleries/${g.fields.Gallery}`}
+                                path={`${g.fields.Path}?id=${g.fields.Gallery}`}
                             ></GalleryNav>
                         );
                     })}
